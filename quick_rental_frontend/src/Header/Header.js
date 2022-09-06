@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom"
 import {useNavigate} from "react-router-dom"
 
-export default function Navbar({setLoggedIn}) {
+export default function Header({setLoggedIn}) {
   const navigate = useNavigate();
 //navigate back to login after logout 
   function handleClick() {
