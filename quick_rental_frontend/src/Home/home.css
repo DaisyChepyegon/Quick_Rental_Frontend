@@ -1,0 +1,7 @@
+.container{
+  display: flex;
+  flex-direction: row;
+}
+.words{
+  margin: 100px 50px;
+}
