@@ -27,8 +27,8 @@ body {
 }
 
 .nav {
-  background-color: rgb(145, 98, 177);
-  color: white;
+  background-color: #fff;
+  color: black;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
