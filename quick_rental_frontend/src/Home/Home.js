@@ -5,7 +5,8 @@ import image from './home.jpg'
 
 function Home() {
   return (
-    <>
+    <div className='home'>
+
     <div className='container'>
     <div className='words'>
     <h1><span></span>Rent<span/> Your Home With Us</h1>
@@ -16,8 +17,11 @@ function Home() {
       <img src={image} alt='home' height={500} width={500} />
     </div>
     </div>
+    <div>
     <Search />
-    </>
+    </div>
+
+    </div>
   )
 }
 
