@@ -1,9 +1,11 @@
 import React from 'react'
 import "./home.css"
-import Search from './Search'
+import Search from '../Search/Search'
 import image from './home.jpg'
 
 function Home() {
+
+  
   return (
     <div className='home'>
 

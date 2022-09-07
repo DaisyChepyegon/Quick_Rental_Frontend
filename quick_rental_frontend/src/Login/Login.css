@@ -1,0 +1,34 @@
+
+
+.lgn{
+  background-color: rgb(238, 230, 248);
+  display: flex;
+  flex-direction: row;
+}
+.log{
+ 
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+
+}
+.log input{
+  border: solid black 1px;
+  font-size: 1em;
+  font-family: sans-serif;
+  margin-bottom: 0.5em;
+}
+button{
+  margin-top: 50px;
+  width: 180px;
+  font-size: 20px;
+  font-style: italic;
+  justify-content: center;
+  margin-left: 280px;
+  background-color: rgb(193, 172, 212);
+  border-radius: 5px;
+}
+.login{
+  margin-top: 100px;
+  margin-left: 50px;
+}
