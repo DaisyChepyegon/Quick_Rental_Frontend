@@ -1,6 +1,7 @@
-import React from 'react'
+import {useNavigate} from 'react-router-dom'
+import React,{useState} from 'react'
 
-function Login() {
+function Login({setLoggedIn}) {
   const [email, setEmail] =useState("")
   const [password, setPassword] =useState("")
   const navigate = useNavigate();
@@ -33,9 +34,6 @@ function Login() {
     <div>
       <div className="lgn">
 
-<div className="img">
-  <img src={home} alt="display" height={550} width={500}/>
-</div>
 
 <div className="login">
 <h1>Login</h1>

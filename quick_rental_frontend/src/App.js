@@ -1,4 +1,5 @@
 import {Route, Routes} from "react-router-dom";
+import { useState } from "react";
 import Home from "./Home/Home";
 import Houses from "./Houses/Houses";
 import Header from "./Header/Header";
@@ -6,6 +7,7 @@ import Login from "./Login/Login";
 import Signup from "./Signup/Signup";
 
 function App() {
+  const [loggedIn, setLoggedIn] = useState(false)
   return (
     <>
     <Header />
@@ -14,7 +16,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home  />} />
           <Route exact path="/houses" element={<Houses  />} />
-          <Route exact path="/login" element={<Login />} />
+          <Route exact path="/login" element={<Login setLoggedIn={setLoggedIn}/>} />
           <Route exact path="/signup" element={<Signup />} />
 
         </Routes>
