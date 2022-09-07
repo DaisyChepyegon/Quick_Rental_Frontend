@@ -1,11 +1,13 @@
 import React from 'react'
+import {Navigate} from "react-router-dom"
 import "./home.css"
 import Search from '../Search/Search'
 import image from './home.jpg'
 
-function Home() {
+function Home({loggedIn}) {
+  // if (!loggedIn)
+  //   return <Navigate to="/Login"/>
 
-  
   return (
     <div className='home'>
 

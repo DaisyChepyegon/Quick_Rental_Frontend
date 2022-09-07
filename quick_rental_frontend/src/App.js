@@ -10,11 +10,11 @@ function App() {
   const [loggedIn, setLoggedIn] = useState(false)
   return (
     <>
-    <Header />
+    <Header setLoggedIn={setLoggedIn}/>
     <div className="container">
 
         <Routes>
-          <Route exact path="/" element={<Home  />} />
+          <Route exact path="/" element={<Home loggedIn={loggedIn} />} />
           <Route exact path="/houses" element={<Houses  />} />
           <Route exact path="/login" element={<Login setLoggedIn={setLoggedIn}/>} />
           <Route exact path="/signup" element={<Signup />} />
