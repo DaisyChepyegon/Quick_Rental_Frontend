@@ -1,0 +1,39 @@
+.reg{
+  background-color: rgb(186, 228, 186);
+  margin: 50px 150px;
+  border-radius: 10px;
+}
+.signup{
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 50px;
+  
+}
+.imgs{
+  margin: 0px;
+  padding: 0px;
+}
+.sign{
+ 
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+
+}
+.sign input{
+  border: solid black 1px;
+  font-size: 1em;
+  font-family: sans-serif;
+  margin-bottom: 0.5em;
+}
+button{
+  margin-top: 30px;
+  width: 180px;
+  font-size: 20px;
+  font-style: italic;
+  justify-content: center;
+  margin-left: 280px;
+  background-color: rgb(66, 226, 26);
+  border-radius: 5px;
+}
