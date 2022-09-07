@@ -1,7 +1,33 @@
 import React from 'react'
 
 function Login() {
+  const [email, setEmail] =useState("")
+  const [password, setPassword] =useState("")
+  const navigate = useNavigate();
+    //authentinticate users
+  const [account, setAccount] = useState(() => {
+    // getting stored value
+    const saved = localStorage.getItem("acc");
+    const initialValue = JSON.parse(saved);
+    return initialValue || "";
+  });
+  
+ 
+  function handleSubmit(event) {
+     event.preventDefault();
+     console.log(account.email, email)
+    if(( email ===account.email) &&(password === account.password))
+    { 
+      setLoggedIn(true)
+      navigate("/")
 
+      alert("Loggin SuccessFull")
+      return
+    }else{
+      alert("wrong email or password")
+    }
+ 
+  }
   
   return (
     <div>
