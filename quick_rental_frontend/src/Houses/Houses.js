@@ -1,6 +1,9 @@
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 
 function Houses() {
+  const[houses, setHouses] = useState([])
+
+  
   return (
     <div>
       
