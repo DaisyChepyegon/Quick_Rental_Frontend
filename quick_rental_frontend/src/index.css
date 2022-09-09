@@ -27,7 +27,7 @@ body {
 }
 
 .nav {
-  background-color: #fff;
+  background-color: rgb(5, 83, 9);
   color: black;
   display: flex;
   justify-content: space-between;
@@ -56,6 +56,13 @@ body {
   display: flex;
   align-items: center;
   padding: .25rem;
+}
+
+.nav p {
+  background-color: greenyellow;
+  padding: 5px;
+  margin: 0;
+  border-radius: 6px;
 }
 
 .nav li.active {

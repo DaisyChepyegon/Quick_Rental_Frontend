@@ -17,7 +17,7 @@ import {useNavigate} from "react-router-dom"
         <NavLink to="/login">Log In</NavLink>
         <NavLink to="/signup">Sign Up</NavLink>
 
-      <button onClick={handleClick}>Logout</button>
+      <p onClick={handleClick}>Logout</p>
 
     </nav>
   )
