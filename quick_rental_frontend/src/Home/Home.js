@@ -4,7 +4,7 @@ import "./home.css"
 import Search from '../Search/Search'
 import image from './home.jpg'
 
-function Home({loggedIn}) {
+function Home({location}) {
   // if (!loggedIn)
   //   return <Navigate to="/Login"/>
 
@@ -23,6 +23,12 @@ function Home({loggedIn}) {
     </div>
     <div>
     <Search />
+
+    <div>
+      <ul>
+        <li>{location}</li>
+      </ul>
+    </div>
     </div>
 
     </div>
