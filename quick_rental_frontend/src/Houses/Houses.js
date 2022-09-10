@@ -1,44 +1,37 @@
 import React,{useEffect,useState} from 'react'
-import Home from '../Home/Home';
+import axios from 'axios'
+import HouseContainer from './HouseContainer'
+import HouseForms from './HouseForms'
+import './house.css'
 
 
 function Houses() {
-  const[houses, setHouses] = useState([])
+  const [houses, setHouses] = useState([])
 
-  useEffect(() => {
-    fetch("http://localhost:9292/houses")
-    .then((resp) => resp.json())
-    .then((houses) => setHouses(houses));
-  },[]);
-  console.log(houses);
+  const getHouse = () => {
+    axios.get("http://localhost:9292/houses")
+    .then((resp => {
+      setHouses(resp.data)
+      //console.log(resp.data)
+    }))
+  }
 
-  let container = (
-    houses.map((house) => (
-      <div>
-        <div className='cont'>
+  const addData = (newdata) => {
+    axios.post("http://localhost:9292/houses", newdata)
+  }
 
-          <p> {house.location} </p>
-          <p> {house.price} </p>
-          <p> {house.bedrooms} </p>
-          <p> {house.description} </p>
-          {/* <p> {house.reviews.name} </p> */}
+  const addHouse = (newData) => {
+    setHouses(
+      [...houses, newData]
+    )
+  }
 
-          <div className='loc'>
-          <h2>Locations</h2>
-            {houses.map((list) => <Home location={list.location} key={list.id} />)}
-          </div>
-
-        </div>
-      </div>
-    ))
-  )
-
+  
 
   return (
     <div>
-      <div>{container}</div>
+      
     </div>
-    
   )
   
 }
