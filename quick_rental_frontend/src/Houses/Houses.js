@@ -36,11 +36,26 @@ function Houses() {
     setHouses(update)
   }
 
+  const deleteHouse = (id) =>{
+    updatedom(id)
+    axios.delete(`${"http://localhost:9292/houses"}/${id}`)
+  }
 
+  useEffect(() => {
+    getHouse()
+  },[])
 
   return (
-    <div>
-      
+    <div className='cont'>
+      <div>
+        <HouseForms addHouse={addHouse} />
+
+        <HouseContainer
+          houses={houses}
+          deleteHouse={deleteHouse}
+          updateHouse={updateHouse}
+        />
+      </div>
     </div>
   )
   
