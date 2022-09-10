@@ -26,7 +26,17 @@ function Houses() {
     )
   }
 
-  
+  const updateHouse = async (id,objdata) => {
+    return await axios.patch(`${"http://localhost:9292/houses"}/${id}`,objdata)
+  }
+
+  const updatedom = (id) => {
+    let update = houses.filter((house) => 
+    house.id !== id)
+    setHouses(update)
+  }
+
+
 
   return (
     <div>
