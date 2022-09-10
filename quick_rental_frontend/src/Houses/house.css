@@ -1,0 +1,22 @@
+.info{
+  background-color: rgb(186, 228, 186);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+}
+.btn{
+  margin-top: 30px;
+  width: 180px;
+  font-size: 20px;
+  font-style: italic;
+  justify-content: center;
+  margin-left: 380px;
+  background-color: rgb(66, 226, 26);
+  border-radius: 5px;
+}
+.info input{
+  margin: 10px;
+  border-radius: 5px;
+  padding: 5px;
+}

@@ -17,4 +17,3 @@ function HouseDisplay({location, bedrooms, price, description, id, updateHouse, 
 }
 
 export default HouseDisplay
-{location, bedrooms, price, discription}

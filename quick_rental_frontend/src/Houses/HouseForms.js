@@ -27,8 +27,9 @@ function HouseForms({addHouse}) {
     }
 
   return (
+    <div className='form'>
    <form onSubmit={handleSubmit} className="info">
-     <h2>Houses</h2>
+     <h2>Add New Houses</h2>
      <input
       name='location'
       type="text"
@@ -63,6 +64,7 @@ function HouseForms({addHouse}) {
      <input className='btn' type="submit" value="send" />
 
    </form>
+   </div>
   )
 }
 
