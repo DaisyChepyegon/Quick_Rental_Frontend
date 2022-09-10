@@ -1,9 +1,14 @@
-.info{
+.cont{
   background-color: rgb(186, 228, 186);
+  width: 100%;
+}
+.info{
   display: flex;
   flex-direction: column;
-  padding: 10px;
-  width: 100%;
+  padding: 20px 150px;
+  max-width: 100%;
+  position: relative;
+
 }
 .btn{
   margin-top: 30px;
@@ -18,5 +23,5 @@
 .info input{
   margin: 10px;
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px;
 }
