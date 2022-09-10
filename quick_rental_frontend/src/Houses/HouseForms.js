@@ -19,8 +19,15 @@ function HouseForms({addHouse}) {
         [name]:value,
       })
     }
+
+    const handleSubmit=(e) => {
+      e.preventDefault()
+      addHouse(formData)
+      console.log(formData)
+    }
+
   return (
-   <form>
+   <form onSubmit={handleSubmit} className="info">
      <h2>Houses</h2>
      <input
       name='location'
