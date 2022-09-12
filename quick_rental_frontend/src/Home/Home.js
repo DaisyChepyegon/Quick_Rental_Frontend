@@ -48,7 +48,7 @@ function Home({location}) {
     </div>
 
     <div>
-    <Search />
+    <Search placeholder="search by location" data = {houses}/>
     </div>
 
     <div>

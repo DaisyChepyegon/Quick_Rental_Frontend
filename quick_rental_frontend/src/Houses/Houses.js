@@ -3,6 +3,7 @@ import axios from 'axios'
 import HouseContainer from './HouseContainer'
 import HouseForms from './HouseForms'
 import './house.css'
+import Search from '../Search/Search'
 
 
 function Houses() {
@@ -12,7 +13,7 @@ function Houses() {
     axios.get("http://localhost:9292/houses")
     .then((resp => {
       setHouses(resp.data)
-      //console.log(resp.data)
+      console.log(resp.data)
     }))
   }
 
@@ -49,6 +50,8 @@ function Houses() {
     <div className='cont'>
       <div>
         <HouseForms addHouse={addHouse} />
+
+        {/* <Search placeholder="search by location..." data={getHouse}/> */}
 
         <HouseContainer
           houses={houses}

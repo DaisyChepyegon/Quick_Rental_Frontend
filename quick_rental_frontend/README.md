@@ -86,7 +86,7 @@ the major challange i faced was authenticating user login
 * clone the Repo using the command: git clone 
 https://github.com/DaisyChepyegon/The-Grind
 
-*Backend Repo :https://github.com/DaisyChepyegon/The-Grind-Api
+* Backend Repo :https://github.com/DaisyChepyegon/The-Grind-Api
 
 * unzip the folder 
 
