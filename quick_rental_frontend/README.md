@@ -1,6 +1,7 @@
-# The Grind Coffee House
+# Quick_Rentals
 
-This is a web application that users can get informations about a coffee shop, check out what they sell and even add comments
+This is a web application that users can get informations about rental houses in Nairobi their locations, price and details.
+
 
 ---
 # Author : 
@@ -11,22 +12,16 @@ Daisy Chepyegon
 ## Screenshot
 
 ### HOME PAGE
-![image](./src/images/Home.png)
+![image](./images/Home1.png)
 
-### MENU PAGE
-![image](./src/images/menu.png)
-
-### ABOUT PAGE
-![image](./src/images/About.png)
-
-### COMMENTS PAGE
-![image](./src/images/comments.png)
+### HOUSES PAGE
+![image](./images/House.png)
 
 ### LOGIN PAGE
-![image](./src/images/login.png)
+![image](./images/login1.png)
 
 ### SIGNUP PAGE
-![image](./src/images/signup.png)
+![image](./images/signup1.png)
 
 
 # Table of Content
@@ -50,7 +45,8 @@ Daisy Chepyegon
 
 ## languages used
 *React
-*css
+*HTLL/CSS
+*Ruby
 
 
 
@@ -62,19 +58,22 @@ register and login into the page
 
 view the contents of the page
 
-add Comments
+add Houses
 
 use the navigation the pages easily
+
+search location by location
 
 
 # Description
 
-This web application is user to help its users get information about the coffee shop and what they offer at the comfort of their homes.They can get the ingredients,and the names, they can also comment about their experience when they visited the shop
+This web application is user to help its users get information about the rental houses and what they offer at the comfort of their homes.They can get the location and price, they can also add reviews about their experience when they visited they stayed in those houses
 
 
 # Challanges
 
 the major challange i faced was authenticating user login
+adding the landloads details
 ---
 # Project Setup Instuctions
 
@@ -84,13 +83,13 @@ the major challange i faced was authenticating user login
 ## clone repo
 
 * clone the Repo using the command: git clone 
-https://github.com/DaisyChepyegon/The-Grind
+https://github.com/DaisyChepyegon/Quick_Rental_Frontend
 
-* Backend Repo :https://github.com/DaisyChepyegon/The-Grind-Api
+* Backend Repo https://github.com/DaisyChepyegon/Quick_Rental_Backend
 
 * unzip the folder 
 
-* run the index.html on your browser
+* run npm start in the frontend and rake server in the backend
 
 # Contributing to the project
 
@@ -114,7 +113,7 @@ https://github.com/DaisyChepyegon/The-Grind
 
 * click the following link to view the application
 
- https://the-grind-house.herokuapp.com/
+ https://quick-rentals-frontend.vercel.app/
 
 ---
 
@@ -124,7 +123,7 @@ https://github.com/DaisyChepyegon/The-Grind
 
 # Licence
 
-Copyright (c) [2022] [The-Grind] Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+Copyright (c) [2022] [Quick_Rentals] Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 

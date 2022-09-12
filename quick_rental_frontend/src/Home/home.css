@@ -6,6 +6,7 @@
 .container{
   display: flex;
   flex-direction: row;
+  height: 50%;
 }
 .words{
   margin: 100px 50px;
@@ -21,7 +22,8 @@
 .dis{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 2rem;
 }
 .contain{
   height: 200px;

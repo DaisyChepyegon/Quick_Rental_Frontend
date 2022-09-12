@@ -3,7 +3,7 @@ import {Navigate} from "react-router-dom"
 import "./home.css"
 import image from './home.jpg'
 
-function Home({location, reviews}) {
+function Home({reviews}) {
   // if (!loggedIn)
   //   return <Navigate to="/Login"/>
 
@@ -26,7 +26,7 @@ function Home({location, reviews}) {
           <p> {house.price} </p>
           <p> {house.bedrooms} </p>
           <p> {house.description} </p>
-
+          <hr />
         </div>
       </div>
     ))
@@ -39,6 +39,7 @@ function Home({location, reviews}) {
         <div className='contain'>
           <h4>{review.name}</h4>
           <p>{review.comment}</p>
+          <hr />
         </div>
       </>
     ))
@@ -51,7 +52,12 @@ function Home({location, reviews}) {
     <div className='container'>
     <div className='words'>
     <h1><span></span>Rent<span/> Your Home With Us</h1>
-     <p>The public static directory is mapped to the / endpoint, and visiting this endpoint from a browser will download the index.html webpage. This webpage in turn loads the React components. And because React Browser Router is a React component, the routes are loaded dynamically after visiting the / endpoint.</p>
+     <p>Providing our clients with
+excellent service via strategic
+and timely execution,This enables the users to find their ideal houses at the price range they can afford.
+
+Contact us for more infomation
+</p>
     </div>
 
     <div className='image'>
