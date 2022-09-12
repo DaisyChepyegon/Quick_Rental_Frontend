@@ -8,9 +8,13 @@ function Search({placeholder, data}) {
   const handleFilter = (event) =>{
     const searchword = event.target.value
     const newFilter = data.filter((value) => {
-      return value.location.includes(searchword)
+      return value.location.toLowerCase().includes(searchword.toLowerCase())
     })
-    SetFilterHouses(newFilter)
+    if (searchword === ""){
+      SetFilterHouses([]);
+    }else{
+      SetFilterHouses(newFilter)
+    }
   }
 
   return (
@@ -25,7 +29,7 @@ function Search({placeholder, data}) {
       <div className='results'>
         {filterHouses.map((value, key) =>{
           return (
-            <a className='dataitem' href={value.link} target="_parent">
+            <a className='dataitem' href=""target="_parent">
           <p>{value.location}</p>
           </a>
           )
