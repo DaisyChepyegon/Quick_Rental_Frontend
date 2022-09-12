@@ -13,7 +13,7 @@ function Login({ setLoggedIn }) {
     const initialValue = JSON.parse(saved);
     return initialValue || "";
   });
-
+  //check if the users input is the same as the one in the local storage
   function handleSubmit(event) {
     event.preventDefault();
     console.log(account.email, email);
@@ -28,6 +28,7 @@ function Login({ setLoggedIn }) {
     }
   }
 
+  //create login form
   return (
     <div className="log">
       <div className="lgn">

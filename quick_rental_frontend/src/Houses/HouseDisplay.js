@@ -11,6 +11,7 @@ function HouseDisplay({location, bedrooms, price, description, id, updateHouse, 
         <p>{description}</p>
       </div>
 
+      {/* add a delete button */}
       <button className='delete' onClick={() => {deleteHouse(id)}}>Delete</button>
     </div>
   )

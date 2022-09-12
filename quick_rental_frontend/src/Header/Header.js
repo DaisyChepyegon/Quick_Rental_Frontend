@@ -10,6 +10,7 @@ import {useNavigate} from "react-router-dom"
     localStorage.clear()
   }
 
+  //add the navigation links
   return (
     <nav className="nav">
         <NavLink to="/" >Home </NavLink>
