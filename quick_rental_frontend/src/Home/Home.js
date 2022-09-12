@@ -1,10 +1,9 @@
 import React,{useEffect, useState} from 'react'
 import {Navigate} from "react-router-dom"
 import "./home.css"
-import Search from '../Search/Search'
 import image from './home.jpg'
 
-function Home({location}) {
+function Home({location, reviews}) {
   // if (!loggedIn)
   //   return <Navigate to="/Login"/>
 
@@ -17,21 +16,34 @@ function Home({location}) {
   },[]);
   console.log(houses);
 
+
   let container = (
     houses.map((house) => (
       <div>
-        <div className='cont'>
+        <div className='contain'>
 
           <p> {house.location} </p>
           <p> {house.price} </p>
           <p> {house.bedrooms} </p>
           <p> {house.description} </p>
-          {/* <p> {house.find(params[:id]).reviews.name} </p> */}
 
         </div>
       </div>
     ))
+    
   )
+
+  let reviewcontainer = (
+    reviews.map((review) => (
+      <>
+        <div className='contain'>
+          <h4>{review.name}</h4>
+          <p>{review.comment}</p>
+        </div>
+      </>
+    ))
+  )
+
 
   return (
     <div className='home'>
@@ -43,17 +55,23 @@ function Home({location}) {
     </div>
 
     <div className='image'>
-      <img src={image} alt='home' height={500} width={500} />
+      <img src={image} alt='home' height={550} width={500} />
     </div>
     </div>
 
     <div>
     {/* <Search placeholder="search by location" data = {houses}/> */}
     </div>
-
-    <div>
+    
+    <div className='dis'>
+    <div className='left'>
       {container}
     </div>
+    <div className='right'>
+    {reviewcontainer}
+    </div>
+    </div>
+    
 
     </div>
   )

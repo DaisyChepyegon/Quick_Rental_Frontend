@@ -1,5 +1,5 @@
 import {Route, Routes} from "react-router-dom";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import Home from "./Home/Home";
 import Houses from "./Houses/Houses";
 import Header from "./Header/Header";
@@ -8,13 +8,24 @@ import Signup from "./Signup/Signup";
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false)
+
+  const[reviews, setReviews] = useState([])
+
+  useEffect(() => {
+    fetch("https://quickrentals.herokuapp.com/reviews")
+    .then((resp) => resp.json())
+    .then((reviews) => setReviews(reviews));
+  },[]);
+  console.log(reviews);
+
+
   return (
     <>
     <Header setLoggedIn={setLoggedIn}/>
     <div className="container">
 
         <Routes>
-          <Route exact path="/" element={<Home loggedIn={loggedIn} />} />
+          <Route exact path="/" element={<Home loggedIn={loggedIn}  reviews= {reviews}/>} />
           <Route exact path="/houses" element={<Houses  />} />
           <Route exact path="/login" element={<Login setLoggedIn={setLoggedIn}/>} />
           <Route exact path="/signup" element={<Signup />} />
