@@ -54,9 +54,10 @@ function HouseForms({addHouse}) {
       value={formData.price}
       />
 
-     <textarea 
-      name="descriprion"
-      placeholder="Write your description here..." rows={6}
+     <input 
+      name='description'
+      type="text"
+      placeholder='Write your description here'
       onChange={handleChange}
       value={formData.description}
      />

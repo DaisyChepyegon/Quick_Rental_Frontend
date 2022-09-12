@@ -11,7 +11,7 @@ function Home({location}) {
   const[houses, setHouses] = useState([])
 
   useEffect(() => {
-    fetch("http://localhost:9292/houses")
+    fetch("https://quickrentals.herokuapp.com/houses")
     .then((resp) => resp.json())
     .then((houses) => setHouses(houses));
   },[]);
@@ -26,7 +26,7 @@ function Home({location}) {
           <p> {house.price} </p>
           <p> {house.bedrooms} </p>
           <p> {house.description} </p>
-          {/* <p> {house.reviews.name} </p> */}
+          {/* <p> {house.find(params[:id]).reviews.name} </p> */}
 
         </div>
       </div>
@@ -48,7 +48,7 @@ function Home({location}) {
     </div>
 
     <div>
-    <Search placeholder="search by location" data = {houses}/>
+    {/* <Search placeholder="search by location" data = {houses}/> */}
     </div>
 
     <div>

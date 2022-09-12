@@ -10,25 +10,28 @@ function Houses() {
   const [houses, setHouses] = useState([])
 
   const getHouse = () => {
-    axios.get("http://localhost:9292/houses")
+    axios.get("https://quickrentals.herokuapp.com/houses")
     .then((resp => {
       setHouses(resp.data)
       console.log(resp.data)
     }))
   }
 
-  const addData = (newdata) => {
-    axios.post("http://localhost:9292/houses", newdata)
-  }
-
-  const addHouse = (newData) => {
+  const addHouse = (newdata) => {
+    axios.post("https://quickrentals.herokuapp.com/houses", newdata)
     setHouses(
-      [...houses, newData]
+      [...houses, newdata]
     )
   }
 
+  // const addHouse = (newdata) => {
+  //   setHouses(
+  //     [...houses, newdata]
+  //   )
+  // }
+
   const updateHouse = async (id,objdata) => {
-    return await axios.patch(`${"http://localhost:9292/houses"}/${id}`,objdata)
+    return await axios.patch(`${"https://quickrentals.herokuapp.com/houses"}/${id}`,objdata)
   }
 
   const updatedom = (id) => {
@@ -39,7 +42,7 @@ function Houses() {
 
   const deleteHouse = (id) =>{
     updatedom(id)
-    axios.delete(`${"http://localhost:9292/houses"}/${id}`)
+    axios.delete(`${"https://quickrentals.herokuapp.com/houses"}/${id}`)
   }
 
   useEffect(() => {
@@ -51,7 +54,7 @@ function Houses() {
       <div>
         <HouseForms addHouse={addHouse} />
 
-        {/* <Search placeholder="search by location..." data={getHouse}/> */}
+        <Search placeholder="search by location..." data={houses}/>
 
         <HouseContainer
           houses={houses}
