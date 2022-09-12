@@ -54,7 +54,7 @@ function Home({reviews}) {
     <div className='container'>
     <div className='words'>
     <h1><span></span>Rent<span/> Your Home With Us</h1>
-     <p>Providing our clients with
+     <h5>Providing our clients with
 excellent service via strategic
 and timely execution,This enables the users to find their ideal houses at the price range they can afford.
 <br />
@@ -67,11 +67,11 @@ and timely execution,This enables the users to find their ideal houses at the pr
 
 <FaInstagram />   <h4>@Quick_Rentals</h4>
 
-</p>
+</h5>
     </div>
 
     <div className='image'>
-      <img src={image} alt='home' height={550} width={500} />
+      <img src={image} alt='home' height={550} width={650} />
     </div>
     </div>
 
