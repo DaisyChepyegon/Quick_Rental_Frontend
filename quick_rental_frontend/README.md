@@ -1,70 +1,131 @@
-# Getting Started with Create React App
+# The Grind Coffee House
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a web application that users can get informations about a coffee shop, check out what they sell and even add comments
 
-## Available Scripts
+---
+# Author : 
+Daisy Chepyegon
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Screenshot
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### HOME PAGE
+![image](./src/images/Home.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### MENU PAGE
+![image](./src/images/menu.png)
 
-### `npm test`
+### ABOUT PAGE
+![image](./src/images/About.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### COMMENTS PAGE
+![image](./src/images/comments.png)
 
-### `npm run build`
+### LOGIN PAGE
+![image](./src/images/login.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### SIGNUP PAGE
+![image](./src/images/signup.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Table of Content
++ [Technologies](#Technologies)
 
-### `npm run eject`
++ [description](#description)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
++ [features](#features)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
++ [project-setup](#project-setup-instuctions)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+ + [project-usage](#clone-repo)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+ + [contribution](#contributing-to-the-project)
 
-## Learn More
+ + [live link](#live-link)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
++ [licence](#licence)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Technologies
 
-### Code Splitting
+## languages used
+*React
+*css
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# Features
 
-### Making a Progressive Web App
+* A user is able to:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+register and login into the page
 
-### Advanced Configuration
+view the contents of the page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+add Comments
 
-### Deployment
+use the navigation the pages easily
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+# Description
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This web application is user to help its users get information about the coffee shop and what they offer at the comfort of their homes.They can get the ingredients,and the names, they can also comment about their experience when they visited the shop
+
+
+# Challanges
+
+the major challange i faced was authenticating user login
+---
+# Project Setup Instuctions
+
+* 1)Installation of the Visual studio code. 2)Git cloning the repository. 3)Make sure the live server extension is installed . 4)Click on Go live . 5)Initializing of git ,git add files,git commit and git push on a different branch.  6)Publisihing of the project on Github using Github-pages.
+
+
+## clone repo
+
+* clone the Repo using the command: git clone 
+https://github.com/DaisyChepyegon/The-Grind
+
+*Backend Repo :https://github.com/DaisyChepyegon/The-Grind-Api
+
+* unzip the folder 
+
+* run the index.html on your browser
+
+# Contributing to the project
+
+*Fork the repo
+
+*Create a new branch in your terminal (git checkout -b improve-feature)
+
+*Install the prerequisites
+
+*Make appropriate changes in file(s)
+
+*Run the server to see the changes
+
+*Add the changes and commit them (git commit -am "Improve App")
+
+*Push to the branch (git push origin improve-app)
+
+*Create a Pull request
+
+## live link
+
+* click the following link to view the application
+
+ https://the-grind-house.herokuapp.com/
+
+---
+
+## Contact Information
+* Email: daisychpyegon@gmail.com
+
+
+# Licence
+
+Copyright (c) [2022] [The-Grind] Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
