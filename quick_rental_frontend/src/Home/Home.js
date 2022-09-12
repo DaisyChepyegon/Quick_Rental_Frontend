@@ -1,5 +1,7 @@
 import React,{useEffect, useState} from 'react'
-import {Navigate} from "react-router-dom"
+import {FaPhone} from "react-icons/fa";
+import {FaFacebook} from "react-icons/fa";
+import {FaInstagram} from "react-icons/fa";
 import "./home.css"
 import image from './home.jpg'
 
@@ -55,8 +57,16 @@ function Home({reviews}) {
      <p>Providing our clients with
 excellent service via strategic
 and timely execution,This enables the users to find their ideal houses at the price range they can afford.
+<br />
 
-Contact us for more infomation
+<h3> Contact us for more infomation:</h3>
+<br />
+<FaPhone />  <h4>0712345678</h4>
+
+<FaFacebook />   <h4>@Quick_Rentals</h4>
+
+<FaInstagram />   <h4>@Quick_Rentals</h4>
+
 </p>
     </div>
 

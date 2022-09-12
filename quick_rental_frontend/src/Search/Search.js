@@ -5,6 +5,7 @@ import './search.css'
 function Search({placeholder, data}) {
   const[filterHouses, SetFilterHouses] = useState([])
 
+  //filter the users input
   const handleFilter = (event) =>{
     const searchword = event.target.value
     const newFilter = data.filter((value) => {
